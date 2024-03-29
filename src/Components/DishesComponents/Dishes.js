@@ -8,6 +8,7 @@ const Dishes = () => {
     return(
         <div>
             {dishesData.filter(dish => {
+                if(selectedCategory === "ALL") return true;
                 return selectedCategory === dish.category;
             }).map((dish, id ) => <Dish dish = {dish} key={id}/>)}
         </div>
