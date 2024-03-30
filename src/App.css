@@ -7,7 +7,11 @@ body {
 }
 .block{
     padding: 20px;
-    background-color: rgba(255,255,255,.5);
+    background-color: #CACCCE;
+    border-radius: 8px;
+}
+.block_colored {
+    background-color: rgba(55, 114, 40, 0.5);
 }
 img {
     width: 500px;
@@ -15,7 +19,8 @@ img {
     margin-top: 10px;
 }
 .cartIcon {
-    width: 30px;
+    width: 50px;
+    margin-bottom: 10px;
 }
 .categoryButton {
     cursor: pointer;
@@ -27,11 +32,105 @@ img {
     background-color: green;
 }
 .categoryButton:hover {
-    background-color: yellow;
+    background-color: #FEC40D;
 }
 .dish {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.imgCart {
+    width: 250px;
+    height: 200px;
+}
+.cart_name {
+    text-transform: uppercase;
+}
+.cart_container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.order_container {
+    background-color: #f1f1f1;
+    padding: 10px 10px;
+    border-radius:8px;
+    border: 1px solid #232323;
+    margin-top: 10px;
+}
+.cart_portion {
+    text-decoration-line: underline;
+}
+.cart_price {
+    text-transform: uppercase;
+    color: rgba(55, 114, 40, 0.5);
+    text-shadow: .5px .5px #232323;
+}
+
+.dish_button {
+    margin-top: 10px;
+    padding: 7px;
+    border-radius: 8px;
+    border: none;
+    transition: 2s;
+}
+.dish_button:hover {
+    background-color: #FEC40D;
+}
+.dish_price {
+    font-size: 18px;
+    color: #fff;
+   
+}
+.dish_name {
+    text-shadow: .5px .5px #232323;
+    text-transform: uppercase;
+    color: #fff;
+    
+}
+.quantity_number {
+    color: #fff;
+    font-size: 17px;
+}
+.quantity_mines {
+    margin-right: 10px;
+}
+.quantity_plus{
+    margin-left: 10px;
+}
+.icon {
+    width: 20px;
+}
+
+.top {
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 10px;
+    padding: 7px;
+    background-color: #FEC40D;
+    
+}
+
+
+@media all and (max-width: 900px) {
+    
+   .App {
+    flex-direction: column;
+    justify-content: center;
+   }
+   
+}
+@media all and (max-width: 500px) {
+    h1 {
+        font-size: 20px;
+        text-transform: uppercase;
+    }
+    .img_dish {
+        width: 300px;
+        object-fit: cover;
+    }
 }
