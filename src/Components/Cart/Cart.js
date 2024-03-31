@@ -12,7 +12,7 @@ const Cart = () => {
             <h3> Total: $ {totalPrice}</h3>
             {cartItems.map((cartItem,id) => <CartItem
                 cartItem = {cartItem}
-                key={id}
+                key={cartItem}
             />)}
         </div>
     )
